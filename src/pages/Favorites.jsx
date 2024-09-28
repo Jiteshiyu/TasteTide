@@ -1,0 +1,21 @@
+import { useContext } from "react";
+import RecipeItem from "../components/RecipeItem.jsx";
+import { GlobalContext } from "../context/index.jsx";
+
+export default function Favorites() {
+  const { favoritesList } = useContext(GlobalContext);
+
+  return (
+    <div className="pt-4 pb-12 container mx-auto flex flex-wrap justify-center gap-10">
+      {favoritesList && favoritesList.length > 0 ? (
+        favoritesList.map((item) => <RecipeItem key={item.id} item={item} />)
+      ) : (
+        <div>
+          <p className="lg:text-4xl text-xl text-center text-black font-extrabold">
+            Nothing is added in favorites.
+          </p>
+        </div>
+      )}
+    </div>
+  );
+}
