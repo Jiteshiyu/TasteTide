@@ -52,7 +52,7 @@ Ensure that **Node.js** and **npm** are installed on your machine. If not, you c
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/YourUsername/TasteTide.git
+   git clone https://github.com/Jiteshiyu/TasteTide.git
    cd TasteTide
    ```
 
