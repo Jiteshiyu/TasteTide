@@ -7,7 +7,6 @@ TasteTide is a recipe search app built with React.js that allows users to search
 ![Forkify](https://img.shields.io/badge/Forkify-Recipe%20App-FF6B00?style=for-the-badge&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
 ## Table of Contents
 
