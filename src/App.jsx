@@ -10,13 +10,19 @@ export default function App() {
   return (
     <GlobalState>
       <div className="min-h-screen px-8 py-4 bg-white text-gray-600 text-lg">
+        {/* Rendering the Navbar component */}
         <Navbar />
+        {/* Setting up routes for the application */}
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* Route for Home page */}
+          <Route path="/" element={<Home />} /> //
+          {/* Route for Favorites page */}
           <Route path="/favorites" element={<Favorites />} />
+          {/* Route for Recipe Details page */}
           <Route path="/recipe-item/:id" element={<Details />} />
         </Routes>
       </div>
     </GlobalState>
   );
 }
+
