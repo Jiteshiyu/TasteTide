@@ -1,9 +1,11 @@
 import { createContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+// Create a context for global state
 export const GlobalContext = createContext(null);
 
 export default function GlobalState({ children }) {
+  // State variables for managing search, loading, recipes, favorites, and details
   const [searchParam, setSearchParam] = useState("");
   const [loading, setLoading] = useState(false);
   const [recipeList, setRecipeList] = useState([]);
@@ -21,8 +23,10 @@ export default function GlobalState({ children }) {
         `https://forkify-api.herokuapp.com/api/v2/recipes?search=${searchParam}`
       );
 
+      // Parse the response data
       const data = await res.json();
       if (data?.data?.recipes) {
+        // Update recipe list
         setRecipeList(data?.data?.recipes);
         setLoading(false);
         setSearchParam("");
@@ -35,6 +39,7 @@ export default function GlobalState({ children }) {
     }
   }
 
+  // Add to favorites function
   function handleAddToFavorite(getCurrentItem) {
     let cpyFavoritesList = [...favoritesList];
     const index = cpyFavoritesList.findIndex(
@@ -42,11 +47,14 @@ export default function GlobalState({ children }) {
     );
 
     if (index === -1) {
+      // If not found, add it to favorites
       cpyFavoritesList.push(getCurrentItem);
     } else {
+      // If found, remove it from favorites
       cpyFavoritesList.splice(index, 1);
     }
 
+    // Update favorites list state
     setFavoritesList(cpyFavoritesList);
   }
 
