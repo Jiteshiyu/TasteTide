@@ -21,7 +21,7 @@ TasteTide is a recipe search app built with React.js that allows users to search
 
 ## Demo
 
-You can view a live demo of the project [here](https://tastetide.netlify.app/).
+You can view a live demo of the project [Tastetide](https://tastetide.netlify.app/).
 
 ## Features
 
