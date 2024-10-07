@@ -1,6 +1,6 @@
 # TasteTide
 
-TasteTide is a recipe search app built with React.js that allows users to search for recipes and save their favorite ones.
+TasteTide is a recipe search app that allows users to search for recipes and save their favorite ones.
 
 ![React](https://img.shields.io/badge/React-007ACC?style=for-the-badge&logo=react&logoColor=white)
 ![JSX](https://img.shields.io/badge/JSX-React%20Component-informational?style=for-the-badge&logo=react)
